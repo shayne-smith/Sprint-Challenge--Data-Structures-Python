@@ -46,23 +46,11 @@ class LinkedList:
             self.head = node
             return node
 
+        # recursively call reverse_list with next node until end of list is reached
         reversed_list = self.reverse_list(node.get_next(), node)
 
         node.next_node.next_node = node
-        node.next_node = None
 
         return reversed_list
-
-
-        # current = node
-        # stack = LinkedList()
-
-        # if current is None:
-        #     return stack
-
-        # stack.add_to_head(current)
-        # self.reverse_list(current.get_next(), current)
-        # # self.reverse_list(current.get_next(), current)
-
         
         
