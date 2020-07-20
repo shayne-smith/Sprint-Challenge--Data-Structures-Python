@@ -112,6 +112,7 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
+# O(n*logn)
 bst2 = BSTNode(names_2[0])
 
 for i in range(1, len(names_2)):

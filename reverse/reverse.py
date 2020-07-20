@@ -49,6 +49,7 @@ class LinkedList:
         # recursively call reverse_list with next node until end of list is reached
         reversed_list = self.reverse_list(node.get_next(), node)
 
+        # flip next_node pointers to reverse the list
         node.next_node.next_node = node
 
         return reversed_list
